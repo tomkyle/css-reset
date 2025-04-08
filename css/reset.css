@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+* { margin: 0; }
+
+html{
+  font: clamp(1em, 0.75em + 1vw, 1.25em)/calc(1em + 0.5rem) system-ui, sans-serif;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+audio {
+  width: 100%;
+}
+audio:not([controls]) { display:none; }
+
+input, button, textarea, select {
+  font: inherit;
+  font-size: inherit;
+}
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+p, dd {
+  text-wrap: pretty;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+:target { scroll-margin-block: 5ex; }
+

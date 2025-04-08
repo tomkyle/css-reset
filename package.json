@@ -1,0 +1,36 @@
+{
+  "name": "@tomkylenet/css-reset",
+  "version": "1.0.0",
+  "description": "CSS reset based on Josh W Comeau, Andy Bell, and Jen Simmons",
+  "author": "Carsten Witt <tomkyle@posteo.de>",
+  "homepage": "https://github.com/tomkyle/css-reset",
+  "bugs": {
+    "url": "https://github.com/tomkyle/css-reset/issues"
+  },
+  "license": "MIT",
+  "main": "dist/reset.css",
+  "files": [
+    "dist/*.css"
+  ],
+  "keywords": [
+    "css",
+    "reset",
+    "normalize",
+    "styles"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomkyle/css-reset.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
+  },
+  "dependencies": {},
+  "scripts": {
+    "watch": "npx postcss --watch --verbose  --use autoprefixer --dir dist css/*.css",
+    "build": "npx postcss --use autoprefixer --dir dist css/*.css",
+    "prepublishOnly": "npm run build"
+  }
+}
