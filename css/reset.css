@@ -2,11 +2,19 @@
 *::before,
 *::after { box-sizing: border-box; }
 
+:root {
+  scroll-behavior: smooth;
+}
+:root:not(:has(meta[name="color-scheme"])) {
+  color-scheme: light dark;
+}
+
 html{
   font: clamp(1em, 0.75em + 1vw, 1.25em)/calc(1em + 0.5rem) system-ui, sans-serif;
   text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
 }
+
 body {
   min-height: 100vh;
   margin: 0;
