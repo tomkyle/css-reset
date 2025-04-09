@@ -1,7 +1,7 @@
 {
   "name": "@tomkylenet/css-reset",
-  "version": "1.0.1",
-  "description": "CSS reset based on Josh W Comeau, Andy Bell, and Jen Simmons",
+  "version": "1.1.0",
+  "description": "Opinionated CSS reset, based on Josh W Comeau, Andy Bell, and Jen Simmons",
   "author": "Carsten Witt <tomkyle@posteo.de>",
   "homepage": "https://github.com/tomkyle/css-reset",
   "bugs": {
