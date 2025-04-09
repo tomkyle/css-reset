@@ -72,9 +72,5 @@ hr {
   overflow: visible;
 }
 
-#root, #__next {
-  isolation: isolate;
-}
-
 :target { scroll-margin-block: 5ex; }
 
