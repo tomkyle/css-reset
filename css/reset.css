@@ -26,7 +26,6 @@ figure, blockquote, dl, dd {
 }
 
 
-
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -38,6 +37,7 @@ audio {
 }
 audio:not([controls]) { display:none; }
 
+
 input, button, textarea, select {
   font: inherit;
   font-size: inherit;
@@ -45,6 +45,8 @@ input, button, textarea, select {
 textarea:not([rows]) {
   min-height: 10em;
 }
+
+
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
@@ -66,10 +68,14 @@ dd {
   margin-left: clamp(1.4em, 4vw, 2.5rem);
 }
 
-
+abbr[title] {
+  cursor: help;
+  text-decoration: underline dotted;
+}
 
 pre {
   white-space: pre-wrap;
+  tab-size: 4;
 }
 
 hr {
@@ -82,3 +88,21 @@ hr {
 
 :target { scroll-margin-block: 5ex; }
 
+
+[disabled],
+[aria-disabled='true']
+{
+  cursor: default;
+}
+
+[aria-busy='true'] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled='true'] {
+  cursor: default;
+}
